@@ -1,0 +1,34 @@
+package com;
+
+import java.util.Scanner;
+
+public class XylemNumber {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a number");
+		int n = sc.nextInt();
+		boolean rs = isXylem(n);
+		if(rs)
+			System.out.println(n+" is a xylem Number.");
+		else
+			System.out.println(n+" is not a phloem Number.");
+
+	}
+
+	static boolean isXylem(int n) {
+		int x =n*n;
+		while(n>0) {
+			if(n%10!=x%10) {
+
+				return false;
+
+			}
+			n=n/10;
+			x=x/10;
+		}
+
+		return true;
+	}
+
+
+}

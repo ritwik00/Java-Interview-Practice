@@ -1,0 +1,25 @@
+package com;
+
+import java.util.Scanner;
+
+public class Power {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter base number:");
+		int b = sc.nextInt();
+		System.out.println("Enter power");
+		int p = sc.nextInt(); 
+		int s = power(b,p);
+		System.out.println("The count of even digit of that num "+s);
+
+	}
+
+	static int power(int b,int p) {
+		
+		return count;
+	}
+
+	}
+
+

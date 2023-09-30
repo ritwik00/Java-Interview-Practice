@@ -1,0 +1,30 @@
+package com;
+
+import java.util.Scanner;
+
+public class Automophoric {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a number");
+		int n = sc.nextInt();
+		boolean rs = isAuto(n);
+		if(rs)
+			System.out.println(n+" is a Automophoric Number.");
+		else
+			System.out.println(n+" is not a Automophoric Number.");
+
+	}
+
+	static boolean isAuto(int n) {
+		int x =n*n;
+		if(n%10==x%10) {
+
+			return true;
+
+		}
+		n--;
+
+		return false;
+	}
+
+}

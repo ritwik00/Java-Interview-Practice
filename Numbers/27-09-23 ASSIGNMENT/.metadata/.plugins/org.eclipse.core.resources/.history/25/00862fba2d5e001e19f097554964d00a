@@ -1,0 +1,29 @@
+package com;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class WhileLoop {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashMap h = new HashMap();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a number:");
+		int n = sc.nextInt();
+		int s = whileLoop(n);
+		System.out.println("The count of prime digit of that num "+s);
+
+	}
+
+	public static int whileLoop(int n) {
+		int c=1;
+		do{
+			n
+			
+		}
+		while(n<=10);
+		return count;
+	}
+
+}

@@ -1,0 +1,30 @@
+package com;
+
+import java.util.Scanner;
+
+public class BuzzNumber {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a number");
+		int n = sc.nextInt();
+
+
+	}
+}
+
+static int isPerfect(int i) {
+	int sum=1;
+	for(int j=2;j<=i/2;j++) {
+		if(i%j==0) {
+			sum=sum+j;
+		}
+	}
+	return sum;
+}
+
+
+
+}
+
+

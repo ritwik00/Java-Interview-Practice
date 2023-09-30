@@ -1,0 +1,22 @@
+package com;
+
+import java.util.Scanner;
+
+public class perfect {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a range");
+		int n = sc.nextInt();
+		for(int i=100;i<=999;i++){
+			boolean r = isAmnstrong(i);
+			if(r)
+			{
+				System.out.println(i+" is a Amnstrong number.");  
+			}
+		}
+
+	}
+}
+
+}
